@@ -88,6 +88,7 @@ from .ory.OdiaNewsClassification import *
 from .pan.PunjabiNewsClassification import *
 from .pol.PolishClassification import *
 from .por.HateSpeechPortugueseClassification import *
+from .ron.MOROCO import *
 from .ron.RomanianReviewsSentiment import *
 from .ron.RomanianSentimentClassification import *
 from .san.SanskritShlokasClassification import *

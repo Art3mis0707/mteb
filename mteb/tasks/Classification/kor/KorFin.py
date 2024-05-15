@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 from mteb.abstasks import AbsTaskClassification  # type: ignore
 from mteb.abstasks.TaskMetadata import TaskMetadata  # type: ignore
 
@@ -18,7 +16,10 @@ class KorFin(AbsTaskClassification):
         eval_splits=["train"],
         eval_langs=["kor-Hang"],
         main_score="accuracy",
-        date=("2022-01-01", "2022-12-31"),
+        date=(
+            "2022-01-01",
+            "2022-12-31",
+        ),  # Assumed date based on the citations in the paper
         form=["written"],
         domains=["News"],
         task_subtypes=["Sentiment/Hate speech"],
@@ -36,7 +37,7 @@ class KorFin(AbsTaskClassification):
         }
         """,
         n_samples={"train": 2048},
-        avg_character_length={"train": 75.27988205942391},
+        avg_character_length={"train": 75.28},
     )
 
     def dataset_transform(self):
